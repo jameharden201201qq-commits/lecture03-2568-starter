@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,11 +17,30 @@
     ></script>
   </head>
   <body class="p-2">
-    <img src="images/charlie.png" width="64px" height="64px" class="" />
-    <div class="">Charlie Brown</div>
-    <div class="">4 ชม.</div>
-    <div class="">I love 261207 so much. Please give me an A.</div>
-    <div class="">👍 3,500</div>
-    <div>1,500 ความคิดเห็น</div>
+    <!-- border กล่องครอบ p=padding ห่าวจากจอ rounded ทำให้กล่องกลม   style คือการเรียกใช้คำสั่ง css แบบปกติ-->
+    <div class="border p-3 rounded-4" style="max-width: 32rem">
+      <div class="d-flex gap-2 align items-center">
+        <img
+          class="border rounded"
+          src="images/charlie.png"
+          width="64px"
+          height="64px"
+          class=""
+        />
+
+        <div>
+          <div class="">Charlie Brown</div>
+          <div class="">4 ชม.</div>
+        </div>
+      </div>
+
+      <div class="my-2">I love 261207 so much. Please give me an A.</div>
+      <hr />
+      <div class="d-flex">
+        <!--D FLEX ใช้ในการต่อ block div ไปทางขวาเรื่อยๆ-->
+        <div class="me-auto">👍 3,500</div>
+        <div>1,500 ความคิดเห็น</div>
+      </div>
+    </div>
   </body>
 </html>
